@@ -37,7 +37,8 @@ module.exports = function (grunt) {
       options: {
         reporter: 'spec',
         node_env: 'testing',
-        ignoreLeaks: true
+        ignoreLeaks: true,
+        timeout: 20 * 1000
       },
       full: { src: ['spec/runner.js'] }
     },
